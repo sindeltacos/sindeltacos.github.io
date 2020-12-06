@@ -6,7 +6,7 @@
   <link href="https://cqday.top/atom.xml" rel="self"/>
   
   <link href="https://cqday.top/"/>
-  <updated>2020-12-04T15:06:12.133Z</updated>
+  <updated>2020-12-05T10:56:33.995Z</updated>
   <id>https://cqday.top/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Blog</title>
-    <link href="https://cqday.top/2020/hello-world/"/>
-    <id>https://cqday.top/2020/hello-world/</id>
-    <published>2020-11-14T03:08:18.201Z</published>
-    <updated>2020-12-04T15:06:12.133Z</updated>
+    <title>这个站点暂时正在装修！</title>
+    <link href="https://cqday.top/2020/11.html"/>
+    <id>https://cqday.top/2020/11.html</id>
+    <published>2020-12-05T10:37:44.000Z</published>
+    <updated>2020-12-05T10:56:33.995Z</updated>
     
-    <content type="html"><![CDATA[<p>装修ing</p>]]></content>
+    <content type="html"><![CDATA[<p>这个站点暂时正在装修！<br>快装修好了！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;装修ing&lt;/p&gt;
+    <summary type="html">&lt;p&gt;这个站点暂时正在装修！&lt;br&gt;快装修好了！&lt;/p&gt;
 </summary>
       
     
     
     
+    <category term="站务公告" scheme="https://cqday.top/categories/%E7%AB%99%E5%8A%A1%E5%85%AC%E5%91%8A/"/>
+    
+    
+    <category term="Hexo" scheme="https://cqday.top/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://cqday.top/tags/NexT/"/>
     
   </entry>
   
