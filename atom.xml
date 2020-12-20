@@ -6,7 +6,7 @@
   <link href="https://cqday.top/atom.xml" rel="self"/>
   
   <link href="https://cqday.top/"/>
-  <updated>2020-12-19T13:56:56.004Z</updated>
+  <updated>2020-12-20T06:56:19.530Z</updated>
   <id>https://cqday.top/</id>
   
   <author>
@@ -17,28 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>K12重庆市2020—2021学年上期第二阶段考试 八年级英语（仁爱版）PaperClip参考答案</title>
-    <link href="https://cqday.top/2020/en.html"/>
-    <id>https://cqday.top/2020/en.html</id>
-    <published>2020-12-05T10:37:44.000Z</published>
-    <updated>2020-12-19T13:56:56.004Z</updated>
+    <title>在你的NexT主题Hexo博客中添加评论系统</title>
+    <link href="https://cqday.top/2020/26701.html"/>
+    <id>https://cqday.top/2020/26701.html</id>
+    <published>2020-12-20T10:37:44.000Z</published>
+    <updated>2020-12-20T06:56:19.530Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="大家"><a href="#大家" class="headerlink" title="大家"></a>大家</h1><img src="https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/banner.jpg"/>]]></content>
+    <content type="html"><![CDATA[<p>NexT主题内置了Valine评论系统<br>在<code>themes\next\_config.yml</code> 文件中<kbd>Ctrl</kbd>+<kbd>F</kbd>搜索<code>valine</code>字段，找到如下代码块:</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Valine</span></span><br><span class="line"><span class="comment"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="comment"># Your leancloud application appid</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="comment"># Your leancloud application appkey</span></span><br><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># Mail notifier</span></span><br><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># Comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># Gravatar style</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span> <span class="comment"># Custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># Pagination size</span></span><br><span class="line">  <span class="attr">language:</span> <span class="comment"># Language, available values: en, zh-cn</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># Article reading statistic</span></span><br><span class="line">  <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="comment"># When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></span><br><span class="line">  <span class="comment">#post_meta_order: 0</span></span><br></pre></td></tr></table></figure><p>进入<a href="https://leancloud.cn/">LeanCloud</a>注册一个账号,并完成实名验证，过程不再阐述。<br>接下来创建一个应用，名字可以随便取，版本选择开发版。<br><img src="https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/00.PNG"/><br><img src="https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/01.PNG"/></p><p>进入设置，点击应用Keys，把获得的AppID和ApppKey粘贴到对应配置文件的位置，把<code>enable</code>更改为<code>true</code>。<br><img src="https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/02.PNG"/><br><img src="https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/03.PNG"/><br>就像这样</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Valine</span></span><br><span class="line"><span class="comment"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="string">FFFFFFFFFFFFFFFFFFFFFFFFFFFFF</span> <span class="comment"># Your leancloud application appid</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="string">ffffffffffffffffffffffffffffff</span> <span class="comment"># Your leancloud application appkey</span></span><br><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># Mail notifier</span></span><br><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># Comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># Gravatar style</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span> <span class="comment"># Custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># Pagination size</span></span><br><span class="line">  <span class="attr">language:</span> <span class="comment"># Language, available values: en, zh-cn</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># Article reading statistic</span></span><br><span class="line">  <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="comment"># When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></span><br><span class="line">  <span class="comment">#post_meta_order: 0</span></span><br></pre></td></tr></table></figure><p>然后执行hexo四件套，</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p>你的评论系统设置完成！<br>如果想要一些界面不显示评论，只需要在MarkDown文件头标注  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">commens: false</span><br></pre></td></tr></table></figure><p>即可！  </p><center>本文章已关闭评论系统</center>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;大家&quot;&gt;&lt;a href=&quot;#大家&quot; class=&quot;headerlink&quot; title=&quot;大家&quot;&gt;&lt;/a&gt;大家&lt;/h1&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/sindeltacos/pic/app/banner.jpg&quot;/&gt;</summary>
+    <summary type="html">&lt;p&gt;NexT主题内置了Valine评论系统&lt;br&gt;在&lt;code&gt;themes\next\_config.yml&lt;/code&gt; 文件中&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;F&lt;/kbd&gt;搜索&lt;code&gt;valine&lt;/code&gt;字段，找到如下代码块:&lt;/p&gt;
+&lt;figure </summary>
       
     
     
     
-    <category term="我爱学习" scheme="https://cqday.top/categories/%E6%88%91%E7%88%B1%E5%AD%A6%E4%B9%A0/"/>
+    <category term="博客搭建指南" scheme="https://cqday.top/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="Study" scheme="https://cqday.top/tags/Study/"/>
+    <category term="Hexo" scheme="https://cqday.top/tags/Hexo/"/>
     
-    <category term="MonthExam" scheme="https://cqday.top/tags/MonthExam/"/>
+    <category term="NexT" scheme="https://cqday.top/tags/NexT/"/>
+    
+    <category term="Valine" scheme="https://cqday.top/tags/Valine/"/>
     
   </entry>
   
